@@ -1,6 +1,7 @@
 ---
-published: false
+layout: post
+title: My first post
 ---
-## My first blog
+## My first post
 
 Actually, this does ease life if compared with traditional blog construction. At least I won't need to worry about database setup. It seems like there are loads of nice looking themes, which is good for a programer to quickly setup an adorable Blog.
