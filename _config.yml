@@ -9,7 +9,7 @@ name: Tiankun Lu
 description: ...
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/tim.png)
+avatar: "/images/tim.png"
 #
 # Flags below are optional
 #
