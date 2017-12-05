@@ -83,7 +83,7 @@
 
       },
       created:function(){
-        axios.get("https://mailyourself.tk/api/posts")
+        axios.get("http://mailyourself.tk/api/posts")
         .then(function(response){
           console.log(response.data)
           app.parts=response.data
