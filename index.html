@@ -34,7 +34,7 @@
       <div id="stream">
         <div data-aos="flip-up" v-for="part in parts">
           <div data-aos="fade-right">
-            <my-post style="padding: 25px;opacity: 0.95 !important;" v-bind:title="part.title" v-bind:body="part.content"></my-post>
+            <my-post style="padding: 25px;opacity: 0.95 !important;" v-bind:title="part.postTitle" v-bind:body="part.postBody"></my-post>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
 
       },
       created:function(){
-        axios.get("https://api.myjson.com/bins/9vtxj")
+        axios.get("https://104.225.155.230/api/posts")
         .then(function(response){
           console.log(response.data)
           app.parts=response.data
