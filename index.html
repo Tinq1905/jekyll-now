@@ -62,7 +62,7 @@
         return {post:'post here'}
       },
       props:['title','body'],
-      template:'<div class="container " style="margin-bottom:25px;"><div class="card"><div class="card-body"><h5 style="text-align:center;" class="card-title">{{ title }}</h5> <p class="card-text">{{ body }}</p></div></div></div>'
+      template:'<div class="container " style="margin-bottom:25px;"><div class="card"><div class="card-body"><h5 style="text-align:center;" class="card-title">{{ title }}</h5> <p style="white-space: pre-line;" class="card-text">{{ body }}</p></div></div></div>'
     })
     var app = new Vue({
       el:"#stream",
