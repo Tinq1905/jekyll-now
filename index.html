@@ -32,7 +32,7 @@
 
     <section >
       <div id="stream">
-        <div data-aos="flip-up" v-for="part in parts">
+        <div data-aos="flip-up" v-for="part in posts">
           <div data-aos="fade-right">
             <my-post style="padding: 25px;opacity: 0.95 !important;" v-bind:title="part.postTitle" v-bind:body="part.postBody"></my-post>
           </div>
@@ -70,6 +70,11 @@
         parts:undefined,
         selected:undefined
       },
+	computed:{
+		posts:function(){
+			return this.parts.reverse()
+	}
+	},
       methods:{
         deleteThis: function(a,b,c){
           console.log(a)
